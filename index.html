@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <!-- Add site title here, shows in browser tab -->
+    <title>Basic Calculator</title>
+
+    <!-- Add site description here -->
+    <meta name="description" content="basic javascript calculator">
+
+    <!-- Add css stylesheet here -->
+    <link rel="stylesheet" type="text/css" href="/javascript projects/Scientific Calculator/style.css">
+
+    <!-- Add js file here, 'defer' makes it so that it loads after the entire page is parsed -->
+    <script src="/javascript projects/Scientific Calculator/script.js" defer></script>
+
+    <!-- Add favicon here -->
+    <link rel="icon" type="image/png" href="/javascript projects/Scientific Calculator/calculator-icon.png">
+</head>
+
+<body>
+    <!-- whole calculator div -->
+    <div id="calculator">
+
+        <!-- read only = can't type anything in input, where output will display -->
+        <input id="display" readonly>
+
+        <!-- calculator buttons -->
+        <div id="keys">
+            <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="clearDisplay()" class="operator-btn">C</button>
+        </div>
+
+    </div>
+    <!-- end of whole calculator div -->
+</body>
+
+</html>
